@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+<TextView
+    android:id="@+id/tv_ac"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="活动"
+    android:gravity="left"
+    android:textColor="#000"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
+    android:textSize="18sp"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.6dp"
+        android:background="#B1B1B1"/>
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文章"
+        android:gravity="left"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:textSize="18sp"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.6dp"
+        android:background="#B1B1B1"/>
+    <TextView
+        android:id="@+id/tv_or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="组织"
+        android:gravity="left"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:textSize="18sp"/>
+
+
+
+</LinearLayout>

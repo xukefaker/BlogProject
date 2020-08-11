@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="285dp"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+    <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_re_bo_1"/>
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:maxLines="1"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:text="志愿者"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textColor="#000"
+        android:text="消费"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#D3D3D3"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+
+</LinearLayout>

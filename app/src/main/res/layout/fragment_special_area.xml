@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.SpecialAreaFragment"
+
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingTop="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#ffffff">
+        <view.MyViewPager
+            android:id="@+id/looper_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+
+            />
+        <LinearLayout
+            android:id="@+id/points_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+
+            >
+
+        </LinearLayout></RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:src="@drawable/ic_sp_3"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="5dp"
+         />
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_sp_4"
+            android:layout_margin="10dp"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="免费午餐基金"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_alignParentTop="true"/>
+            <TextView
+                android:layout_below="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFF0EF"
+                android:text="免费午餐 萧山大爱"
+                android:textColor="#FF786A"
+                android:textSize="11sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="免费午餐基金"
+                android:textColor="#000"
+                android:layout_alignParentBottom="true"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_sp_a"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+     </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#F4F4F4"/>
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_sp_6"
+                android:layout_margin="10dp"/>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="关爱行动"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_alignParentTop="true"/>
+                <TextView
+                    android:layout_below="@+id/tv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF0EF"
+                    android:text="青春志愿行 关爱共成长"
+                    android:textColor="#FF786A"
+                    android:textSize="11sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共青团中央"
+                    android:textColor="#000"
+                    android:layout_alignParentBottom="true"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/ic_sp_b"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#F4F4F4"/>
+
+
+
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_sp_7"
+                android:layout_margin="10dp"/>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:id="@+id/tv_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="西部计划"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_alignParentTop="true"/>
+                <TextView
+                    android:layout_below="@+id/tv_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF0EF"
+                    android:text="青春志愿行 奉献新时代"
+                    android:textColor="#FF786A"
+                    android:textSize="11sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共青团中央"
+                    android:textColor="#000"
+                    android:layout_alignParentBottom="true"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/ic_sp_b"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#F4F4F4"/>
+
+
+
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_sp_8"
+                android:layout_margin="10dp"/>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:id="@+id/tv_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="暖冬行动"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_alignParentTop="true"/>
+                <TextView
+                    android:layout_below="@+id/tv_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF0EF"
+                    android:text="青春志愿行 温柔回家路"
+                    android:textColor="#FF786A"
+                    android:textSize="11sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共青团中央"
+                    android:textColor="#000"
+                    android:layout_alignParentBottom="true"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/ic_sp_b"
+                    android:textSize="12sp"/>
+
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#F4F4F4"/>
+
+
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_sp_11"
+                android:layout_margin="10dp"/>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:id="@+id/tv_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="节约护水行动"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_alignParentTop="true"/>
+                <TextView
+                    android:layout_below="@+id/tv_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF0EF"
+                    android:text="人人节水 志愿先行"
+                    android:textColor="#FF786A"
+                    android:textSize="11sp"/>
+                <TextView
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共青团中央"
+                android:textColor="#000"
+                android:layout_alignParentBottom="true"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/ic_sp_b"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#F4F4F4"/>
+
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_sp_9"
+                android:layout_margin="10dp"/>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:id="@+id/tv_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="海外计划"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_alignParentTop="true"/>
+                <TextView
+                    android:layout_below="@+id/tv_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF0EF"
+                    android:text="奉献、友爱、互助、进步"
+                    android:textColor="#FF786A"
+                    android:textSize="11sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共青团中央"
+                    android:textColor="#000"
+                    android:layout_alignParentBottom="true"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/ic_sp_b"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#F4F4F4"/>
+
+
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_sp_10"
+                android:layout_margin="10dp"/>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:id="@+id/tv_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="阳光行动"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_alignParentTop="true"/>
+                <TextView
+                    android:layout_below="@+id/tv_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF0EF"
+                    android:text="团中央志愿项目"
+                    android:textColor="#FF786A"
+                    android:textSize="11sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共青团中央"
+                    android:textColor="#000"
+                    android:layout_alignParentBottom="true"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/ic_sp_b"
+                    android:textSize="12sp"/>
+         </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#F4F4F4"/>
+
+
+
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_sp_5"
+                android:layout_margin="10dp"/>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:id="@+id/tv_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="大学生社区志愿服务行动"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_alignParentTop="true"/>
+                <TextView
+                    android:layout_below="@+id/tv_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF0EF"
+                    android:text="走进社区 走进农村 走进基层"
+                    android:textColor="#FF786A"
+                    android:textSize="11sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共青团中央"
+                    android:textColor="#000"
+                    android:layout_alignParentBottom="true"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/ic_sp_b"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#F4F4F4"/>
+        <TextView
+        android:text="没有更多数据"
+        android:textColor="#D3D3D3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+            android:layout_marginTop="10dp"/>
+      </LinearLayout>
+
+</ScrollView>
