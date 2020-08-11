@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EDEEF1">
+<LinearLayout
+    android:id="@+id/ll_search"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="#fff"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="65dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+         >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_search_goback"/>
+    </LinearLayout>
+<TextView
+    android:id="@+id/type"
+    android:layout_width="66dp"
+    android:layout_height="match_parent"
+     android:layout_marginLeft="5dp"
+    android:drawableRight="@drawable/ic_main_xia"
+    android:text="活动"
+    android:gravity="center"
+    android:textColor="#24CBA9"
+    android:textStyle="bold"
+    android:textSize="20sp"/>
+<EditText
+    android:id="@+id/search_content"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:focusable="true"
+    android:focusedByDefault="true"
+    android:layout_marginLeft="10dp"
+    android:hint="请输入想搜索的内容"
+   android:textSize="15sp"
+    android:textColorHint="#B1B1B1"
+    android:textColor="#000"
+    android:maxLines="1"
+    android:background="@null"/>
+
+    <TextView
+        android:id="@+id/search_btn"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:text="搜索"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="历史纪录"
+        android:textColor="#B1B1B1"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#B1B1B1"/>
+</LinearLayout>
