@@ -23,12 +23,14 @@ public class EnterActivity extends BaseActivity{
             @Override
             public void onClick(View view) {
                 navigateTo(LoginActivity.class);
+                finish();
             }
         });
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 navigateTo(RegisterActivity.class);
+
             }
         });
     }

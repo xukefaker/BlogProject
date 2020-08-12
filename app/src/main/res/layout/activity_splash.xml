@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/ic_splash"
+
+     >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_marginTop="10dp">
+       <LinearLayout
+           android:id="@+id/ll_enter"
+           android:layout_width="70dp"
+           android:layout_height="match_parent"
+           android:layout_marginRight="15dp"
+           android:background="@drawable/shape_search_box_blue"
+           android:orientation="horizontal"
+           android:alpha="0.6"
+           android:gravity="center">
+           <TextView
+               android:id="@+id/tv_change"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+                 android:text="3"
+               android:gravity="center"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:text="s  跳过"
+               android:gravity="center"/>
+       </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
