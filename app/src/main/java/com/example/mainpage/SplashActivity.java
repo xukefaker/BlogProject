@@ -61,12 +61,12 @@ public class SplashActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 mTimer.cancel();
-                if (!("".equals(s) && s.isEmpty())) {
-                    navigateTo(MainActivity.class);
-                } else {
-                    navigateTo(EnterActivity.class);
-                }
-
+//                if (!("".equals(s) && s.isEmpty())) {
+//                    navigateTo(MainActivity.class);
+//                } else {
+//                    navigateTo(EnterActivity.class);
+//                }
+    navigateTo(MainActivity.class);
                 finish();
 
 
@@ -76,12 +76,12 @@ public class SplashActivity extends BaseActivity {
         TimerTask timeTask = new TimerTask() {
             @Override
             public void run() {
-                if (!("".equals(s) && s.isEmpty())) {
-                    navigateTo(MainActivity.class);
-                } else {
-                    navigateTo(EnterActivity.class);
-                }
-
+//                if (!("".equals(s) && s.isEmpty())) {
+//                    navigateTo(MainActivity.class);
+//                } else {
+//                    navigateTo(EnterActivity.class);
+//                }
+    navigateTo(MainActivity.class);
                 finish();
 
             }
