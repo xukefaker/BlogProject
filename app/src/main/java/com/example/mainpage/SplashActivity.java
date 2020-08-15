@@ -2,6 +2,8 @@ package com.example.mainpage;
 
 import androidx.annotation.Nullable;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -19,6 +21,8 @@ public class SplashActivity extends BaseActivity {
     private TextView mChange;
     private LinearLayout mEnter;
     private static int longTime;
+    private String s;
+    private SharedPreferences mSharedPreferences;
 
     static {
         longTime = 4;
@@ -31,8 +35,8 @@ public class SplashActivity extends BaseActivity {
             mChange.setText(String.valueOf(longTime));
             if (longTime != 0) {
                 mHandler.postDelayed(this, 1000);
-            }else {
-                longTime=4;
+            } else {
+                longTime = 4;
             }
         }
     };
@@ -51,11 +55,18 @@ public class SplashActivity extends BaseActivity {
     protected void initView() {
         mHandler = new Handler();
         mEnter = findViewById(R.id.ll_enter);
+        mSharedPreferences = getSharedPreferences("data", MODE_PRIVATE);
+        s = mSharedPreferences.getString("name", "").toString();
         mEnter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mTimer.cancel();
-                navigateTo(MainActivity.class);
+                if (!("".equals(s) && s.isEmpty())) {
+                    navigateTo(MainActivity.class);
+                } else {
+                    navigateTo(EnterActivity.class);
+                }
+
                 finish();
 
 
@@ -65,7 +76,12 @@ public class SplashActivity extends BaseActivity {
         TimerTask timeTask = new TimerTask() {
             @Override
             public void run() {
-                navigateTo(MainActivity.class);
+                if (!("".equals(s) && s.isEmpty())) {
+                    navigateTo(MainActivity.class);
+                } else {
+                    navigateTo(EnterActivity.class);
+                }
+
                 finish();
 
             }

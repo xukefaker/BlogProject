@@ -38,6 +38,12 @@ public abstract class BaseActivity extends AppCompatActivity {
         editor.putString(key,val);
         editor.commit();
     }
+
+    protected String getStringFromSp(String key) {
+        SharedPreferences sp =  getSharedPreferences("sp_ttit", MODE_PRIVATE);
+        return sp.getString(key, "");
+    }
+
     //布局的初始化
     protected abstract int initLayout();
     //控件的初始化

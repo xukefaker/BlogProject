@@ -1,5 +1,6 @@
 package com.example.mainpage;
 
+import android.content.SharedPreferences;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -16,11 +17,12 @@ import com.google.gson.Gson;
 import java.util.HashMap;
 
 public class LoginActivity extends BaseActivity {
-
+    private SharedPreferences mSharedPreferences;
     private EditText mEtAccount;
     private EditText mEtPassword;
     private Button mBtnLogin;
     private Button mBtnRegister;
+    private SharedPreferences.Editor mEditor;
     @Override
     protected int initLayout() {
         return R.layout.activity_login;
@@ -45,6 +47,7 @@ public class LoginActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 navigateTo(RegisterActivity.class);
+
                 finish();
 
             }
@@ -56,7 +59,7 @@ public class LoginActivity extends BaseActivity {
 
     }
 
-    private void login(String account, String password) {
+    private void login(final String account, String password) {
         if ("".equals(account) || account == null) {
             Toast.makeText(LoginActivity.this, "请输入账号", Toast.LENGTH_SHORT).show();
             return;
@@ -81,7 +84,15 @@ public class LoginActivity extends BaseActivity {
                     saveStringToSharePreference("token",token);
                     navigateTo(MainActivity.class);
                     finish();
+
+                    mSharedPreferences=getSharedPreferences("data",MODE_PRIVATE);
+                    mEditor=mSharedPreferences.edit();
+                    mEditor.putString("name",account);
+                    mEditor.commit();
+
+               //   String string=  mSharedPreferences.getString("name","").toString();
                     showToastSync("登录成功");
+
 
                 }else {
                     showToastSync("登录失败");

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetActivity"
+    android:background="#fff"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            >
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_search_goback"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="设置"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+        </LinearLayout>
+        <View
+            android:layout_width="55dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#B1B1B1"/>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:layout_weight="1"
+     android:background="#f4f4f4"
+     android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginTop="10dp"
+    android:background="#fff"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="手机号码"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="未绑定"
+        android:textSize="12sp"
+        android:textColor="#B5B5B5"
+        android:gravity="center"
+        android:layout_marginRight="10dp"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_set_1"/>
+</LinearLayout>
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="0.6dp"
+         android:background="#CFCFCF"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+
+         android:background="#fff"
+         android:orientation="horizontal">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:text="密码管理"
+             android:textColor="#000"
+             android:textSize="15sp"
+             android:layout_marginLeft="20dp"/>
+         <View
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1" />
+
+         <ImageView
+             android:layout_width="25dp"
+             android:layout_height="match_parent"
+             android:src="@drawable/ic_set_1"/>
+     </LinearLayout>
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="0.6dp"
+         android:background="#CFCFCF"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+
+         android:background="#fff"
+         android:orientation="horizontal">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:text="密保管理"
+             android:textColor="#000"
+             android:textSize="15sp"
+             android:layout_marginLeft="20dp"/>
+         <View
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1" />
+
+         <ImageView
+             android:layout_width="25dp"
+             android:layout_height="match_parent"
+             android:src="@drawable/ic_set_1"/>
+     </LinearLayout>
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="0.6dp"
+         android:background="#CFCFCF"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+
+         android:background="#fff"
+         android:orientation="horizontal">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:text="登录设备管理"
+             android:textColor="#000"
+             android:textSize="15sp"
+             android:layout_marginLeft="20dp"/>
+         <View
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1" />
+
+         <ImageView
+             android:layout_width="25dp"
+             android:layout_height="match_parent"
+             android:src="@drawable/ic_set_1"/>
+     </LinearLayout>
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="0.6dp"
+         android:background="#CFCFCF"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+
+         android:background="#fff"
+         android:orientation="horizontal">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:text="账号注销"
+             android:textColor="#000"
+             android:textSize="15sp"
+             android:layout_marginLeft="20dp"/>
+         <View
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1" />
+
+         <ImageView
+             android:layout_width="25dp"
+             android:layout_height="match_parent"
+             android:src="@drawable/ic_set_1"/>
+     </LinearLayout>
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="0.6dp"
+         android:background="#CFCFCF"/>
+
+     <LinearLayout
+         android:layout_marginTop="25dp"
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+
+         android:background="#fff"
+         android:orientation="horizontal">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:text="关于我们"
+             android:textColor="#000"
+             android:textSize="15sp"
+             android:layout_marginLeft="20dp"/>
+         <View
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1" />
+
+         <ImageView
+             android:layout_width="25dp"
+             android:layout_height="match_parent"
+             android:src="@drawable/ic_set_1"/>
+     </LinearLayout>
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="0.6dp"
+         android:background="#CFCFCF"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+
+         android:background="#fff"
+         android:orientation="horizontal">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:text="清除缓存"
+             android:textColor="#000"
+             android:textSize="15sp"
+             android:layout_marginLeft="20dp"/>
+         <View
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1" />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:text="0.0Byte"
+             android:textSize="12sp"
+             android:textColor="#B5B5B5"
+             android:gravity="center"
+             android:layout_marginRight="10dp"/>
+         <ImageView
+             android:layout_width="25dp"
+             android:layout_height="match_parent"
+             android:src="@drawable/ic_set_1"/>
+     </LinearLayout>
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="0.6dp"
+         android:background="#CFCFCF"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+
+         android:background="#fff"
+         android:orientation="horizontal">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:text="隐私条款"
+             android:textColor="#000"
+             android:textSize="15sp"
+             android:layout_marginLeft="20dp"/>
+         <View
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1" />
+
+         <ImageView
+             android:layout_width="25dp"
+             android:layout_height="match_parent"
+             android:src="@drawable/ic_set_1"/>
+     </LinearLayout>
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="0.6dp"
+         android:background="#CFCFCF"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+
+         android:background="#fff"
+         android:orientation="horizontal">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:text="注册协议"
+             android:textColor="#000"
+             android:textSize="15sp"
+             android:layout_marginLeft="20dp"/>
+         <View
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1" />
+
+         <ImageView
+             android:layout_width="25dp"
+             android:layout_height="match_parent"
+             android:src="@drawable/ic_set_1"/>
+     </LinearLayout>
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="0.6dp"
+         android:background="#CFCFCF"/>
+     <LinearLayout
+         android:id="@+id/ll_exit"
+         android:layout_marginTop="25dp"
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:background="#fff">
+         <TextView
+             android:id="@+id/tv_exit_login"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:text="退出登录"
+             android:textColor="#000"
+             android:gravity="center"/>
+
+
+     </LinearLayout>
+ </LinearLayout>
+
+</LinearLayout>

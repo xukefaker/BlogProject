@@ -17,15 +17,21 @@ import androidx.fragment.app.Fragment;
 
 import com.example.mainpage.adapter.MyPagerAdapter;
 
+import com.example.mainpage.fragment.regionFragment.AnHuiFragment;
 import com.example.mainpage.fragment.regionFragment.BeiJinFragment;
 import com.example.mainpage.fragment.regionFragment.ChongQingFragment;
+import com.example.mainpage.fragment.regionFragment.FuJianFragment;
 import com.example.mainpage.fragment.regionFragment.HeBeiFragment;
+import com.example.mainpage.fragment.regionFragment.HeiLongJianFragment;
 import com.example.mainpage.fragment.regionFragment.JiLinFragment;
+import com.example.mainpage.fragment.regionFragment.JiangShuFragment;
+import com.example.mainpage.fragment.regionFragment.JiangXiFragment;
 import com.example.mainpage.fragment.regionFragment.LiaoLinFragment;
 import com.example.mainpage.fragment.regionFragment.MengGuFragment;
 import com.example.mainpage.fragment.regionFragment.ShanXiFragment;
 import com.example.mainpage.fragment.regionFragment.ShangHaiFragment;
 import com.example.mainpage.fragment.regionFragment.TianJinFragment;
+import com.example.mainpage.fragment.regionFragment.ZheJiangFragment;
 
 import java.util.ArrayList;
 
@@ -37,9 +43,9 @@ public class RegionActivity extends BaseActivity implements View.OnClickListener
     private NoScrollViewPager mFixedViewPager;
     private ArrayList<Fragment> mFragments = new ArrayList<>();
     private String [] mTitles;
-    private TextView[] textViews=new TextView[9];
+    private TextView[] textViews=new TextView[15];
 private LinearLayout mLinSearch;
-
+private  int n1;
     @Override
     protected int initLayout() {
         return R.layout.activity_region;
@@ -68,6 +74,13 @@ private LinearLayout mLinSearch;
         mFragments.add(new MengGuFragment());
         mFragments.add(new LiaoLinFragment());
         mFragments.add(new JiLinFragment());
+        mFragments.add(new HeiLongJianFragment());
+        mFragments.add(new JiangShuFragment());
+        mFragments.add(new ZheJiangFragment());
+        mFragments.add(new AnHuiFragment());
+        mFragments.add(new FuJianFragment());
+        mFragments.add(new JiangXiFragment());
+
         mFixedViewPager.setOffscreenPageLimit(mFragments.size());
         mFixedViewPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager(), mTitles, mFragments));
 
@@ -90,6 +103,18 @@ private LinearLayout mLinSearch;
         textViews[7].setOnClickListener(this);
         textViews[8]=(TextView)findViewById(R.id.btn_9);
         textViews[8].setOnClickListener(this);
+        textViews[9]=(TextView)findViewById(R.id.btn_10);
+        textViews[9].setOnClickListener(this);
+        textViews[10]=(TextView)findViewById(R.id.btn_11);
+        textViews[10].setOnClickListener(this);
+        textViews[11]=(TextView)findViewById(R.id.btn_12);
+        textViews[11].setOnClickListener(this);
+        textViews[12]=(TextView)findViewById(R.id.btn_13);
+        textViews[12].setOnClickListener(this);
+        textViews[13]=(TextView)findViewById(R.id.btn_14);
+        textViews[13].setOnClickListener(this);
+        textViews[14]=(TextView)findViewById(R.id.btn_15);
+        textViews[14].setOnClickListener(this);
     }
 
     @Override
@@ -104,50 +129,63 @@ private LinearLayout mLinSearch;
 
     @Override
     public void onClick(View view) {
+
         switch (view.getId()){
+            case R.id.ll_search:
+            Intent intent=new Intent(RegionActivity.this,SearchRegionActivity.class);
+            startActivity(intent);
+            break;
             case R.id.btn_1:
-                setBackground(0);
-                mFixedViewPager.setCurrentItem(0);
+               n1=0;
                 break;
             case R.id.btn_2:
-                setBackground(1);
-                mFixedViewPager.setCurrentItem(1);
+                n1=1;
                 break;
             case R.id.btn_3:
-                setBackground(2);
-                mFixedViewPager.setCurrentItem(2);
+                n1=2;
                 break;
             case R.id.btn_4:
-                setBackground(3);
-                mFixedViewPager.setCurrentItem(3);
+                n1=3;
                 break;
             case R.id.btn_5:
-                setBackground(4);
-                mFixedViewPager.setCurrentItem(4);
+                n1=4;
                 break;
             case R.id.btn_6:
-                setBackground(5);
-                mFixedViewPager.setCurrentItem(5);
+                n1=5;
                 break;
             case R.id.btn_7:
-                setBackground(6);
-                mFixedViewPager.setCurrentItem(6);
+                n1=6;
                 break;
             case R.id.btn_8:
-                setBackground(7);
-                mFixedViewPager.setCurrentItem(7);
+                n1=7;
                 break;
             case R.id.btn_9:
-                setBackground(8);
-                mFixedViewPager.setCurrentItem(8);
+                n1=8;
                 break;
-            case R.id.ll_search:
-                Intent intent=new Intent(RegionActivity.this,SearchRegionActivity.class);
-                startActivity(intent);
+            case R.id.btn_10:
+                n1=9;
                 break;
+            case R.id.btn_11:
+                n1=10;
+                break;
+            case R.id.btn_12:
+                n1=11;
+                break;
+            case R.id.btn_13:
+                n1=12;
+                break;
+            case R.id.btn_14:
+                n1=13;
+                break;
+            case R.id.btn_15:
+                n1=14;
+                break;
+
         }
-
-
+        if(view.getId()!=R.id.ll_search) {
+            setBackground(n1);
+            mFixedViewPager.setCurrentItem(n1);
+        }
 
 
     }

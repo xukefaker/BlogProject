@@ -190,138 +190,161 @@
                     android:text="浙江"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_13"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="安徽"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_14"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="福建"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_15"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="江西"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_16"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="山东"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_17"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="河南"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_18"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="湖北"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_19"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="湖南"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_20"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="广东"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_21"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="广西"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_22"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="海南"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_23"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="四川"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_24"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="贵州"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_25"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="云南"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_26"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="西藏"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_27"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="陕西"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_28"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="甘肃"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_29"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="青海"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_30"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="宁夏"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_31"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="新疆"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_32"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="建设兵团"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_33"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="台湾"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_34"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
                     android:text="香港"
                     android:textColor="#000" />
                 <TextView
+                    android:id="@+id/btn_35"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
@@ -329,8 +352,6 @@
                     android:textColor="#000" />
             </LinearLayout>
         </ScrollView>
-
-
 
 
             <LinearLayout

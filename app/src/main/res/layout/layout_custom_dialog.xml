@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+      android:layout_height="match_parent"
+     android:orientation="vertical"
+    android:background="@drawable/load_button4"
+         >
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:text="确定退出登录"
+        android:textSize="20sp"
+        android:background="@drawable/load_button5"
+        android:textColor="#1BB7EC"
+        android:gravity="center"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/tv_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                 android:text="取消"
+                android:background="@drawable/load_button5"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#1BB7EC"
+                android:gravity="center"/>
+
+
+
+
+</LinearLayout>
