@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/germ"
+    android:orientation="vertical"
+
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+      android:orientation="horizontal">
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+           android:text="签  到"
+         android:alpha="0.9"
+           android:textColor="#27CFA7"
+           android:gravity="center"
+           android:textSize="25sp"
+            android:textStyle="bold"/>
+
+
+</LinearLayout>
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+
+           android:layout_weight="1">
+           <ImageView
+              android:id="@+id/iv"
+              android:layout_marginLeft="30dp"
+               android:layout_marginRight="30dp"
+               android:layout_width="match_parent"
+               android:layout_height="250dp"
+               android:background="@drawable/ic_si_1"
+               android:layout_alignParentBottom="true"
+               android:layout_marginBottom="240dp"
+               />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+              android:background="@drawable/load_button1"
+              android:layout_marginLeft="50dp"
+              android:layout_marginRight="50dp"
+              android:layout_alignParentBottom="true"
+              android:layout_marginBottom="60dp"
+            android:alpha="0.8"
+            android:text="刷新二维码"
+            android:textSize="20sp"
+            android:textColor="#f4f4f4"/>
+
+
+     </RelativeLayout>
+
+</LinearLayout>

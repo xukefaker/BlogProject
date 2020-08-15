@@ -39,7 +39,7 @@
 
             <LinearLayout
                 android:id="@+id/search"
-                android:layout_width="200dp"
+                android:layout_width="185dp"
                 android:layout_height="39dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
@@ -49,10 +49,10 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="22dp"
-                    android:layout_height="22dp"
-                    android:layout_marginLeft="13dp"
-                    android:layout_marginRight="11dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:src="@drawable/ic_search" />
 
                 <TextView
@@ -65,8 +65,18 @@
                     android:gravity="center"
                     android:text="搜索活动、组织等"
                     android:textColor="#737373"
-                    android:textSize="15sp" />
+                    android:textSize="14sp" />
             </LinearLayout>
+
+<ImageView
+    android:id="@+id/iv_sao"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:src="@drawable/ic_main_home_sao"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="35dp"
+    />
+
         </LinearLayout>
 
         <LinearLayout

@@ -82,14 +82,6 @@ public class RecommendationFragment extends BaseFragment implements MyViewPager.
         mRv.setLayoutManager(linearLayoutManager);
         mRv.setAdapter(new MyHorRecyclerListViewAdapter(v.getContext()));
 
-//        mRv2=(RecyclerView)v.findViewById(R.id.rv_2);
-        //设置布局管理器
-//        LinearLayoutManager linearLayoutManager2=new LinearLayoutManager(v.getContext());
-//        linearLayoutManager2.setOrientation(LinearLayoutManager.VERTICAL);//设置成垂直的
-//        mRv2.setLayoutManager(linearLayoutManager2);
-//        mRv2.setAdapter(new MyVirRecyclerListViewAdapter(v.getContext()));
-
-
     }
 
     @Override

@@ -10,7 +10,7 @@ import androidx.viewpager.widget.PagerAdapter;
 import java.util.List;
 
 public class LooperPageAdapter extends PagerAdapter {
-    //    private List<Integer> mColors=null;
+
     private List<Integer> mPic = null;
 
     @Override
